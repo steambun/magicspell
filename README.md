@@ -1,6 +1,24 @@
-# magicspell
+# Magic Spell
 Spelling Program to improve Kids Spelling
 
-Fin Can Edit The Code
-Stephen can edit the code
-Zane can edit the code 
+## Developing Magic Spell
+
+1) Setting up virtual environment
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+2) Setup Pip
+    ```sh
+    python3 -m pip install --upgrade pip
+    ```
+
+3) Install Flask
+    ```sh
+    pip install flask
+    ```
+
+4) Run Flask
+    ```sh
+    flask run
+    ```
