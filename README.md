@@ -1,4 +1,4 @@
-# magicspell
+# Magicspell
 Spelling Program to improve Kids Spelling
 
 Fin Can Edit The Code
