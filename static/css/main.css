@@ -6,12 +6,108 @@
     margin-bottom: 10px;
   }
 
+
+.magicspell-controls-box {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magicspell-controls {
+    width: 80vw;
+    max-width: 290px;
+    z-index: 3;
+    padding-bottom: 45px;
+}
+
+.magicspell-outer-grid{
+  width: 90%;
+  margin: 25px auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.magicspell-grid{
+  position: relative;
+  width: 100%;
+  padding-bottom: 103.9230484542%;
+}
+
+.cell-letter{
+  font-weight: 700;
+  font-size: 1.875em;
+  text-anchor: middle;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.magicspell-grid-cell:first-child .cell-fill {
+  cursor: pointer;
+  fill: #f7da21;
+  transition: all 100ms;
+}
+
+.magicspell-grid-cell:nth-child(1) {
+  transform: translate(0, 0);
+}
+
+.magicspell-grid-cell:nth-child(2) {
+  transform: translate(-75%, -50%);
+}
+
+.magicspell-grid-cell:nth-child(3) {
+  transform: translate(0, -100%);
+}
+
+.magicspell-grid-cell:nth-child(4) {
+  transform: translate(75%, -50%);
+}
+
+.magicspell-grid-cell:nth-child(5) {
+  transform: translate(75%, 50%);
+}
+
+.magicspell-grid-cell:nth-child(6) {
+  transform: translate(0, 100%);
+}
+
+.magicspell-grid-cell:nth-child(7) {
+  transform: translate(-75%, 50%);
+}
+
+.magicspell-grid-cell{
+  position: absolute;
+  top: 33.3333333333%;
+  left: 30%;
+  width: 40%;
+  height: 33.3333333333%;
+}
+
+.magicspell-grid-cell .cell-fill {
+  cursor: pointer;
+  fill: #e6e6e6;
+  transition: all 100ms;
+}
+
+/*
+  * {
+    outline: 1px solid red !important;
+ }*/
+
+ 
 .main {
-font: 100% Cursive,"Helvetica Neue",Helvetica,Arial,Sans-serif;
-color: #000;
-letter-spacing: 0px;
-clear: both;
-text-align: left;
+  font: 100% "Helvetica Neue",Helvetica,Arial,Sans-serif;
+  /*
+  color: #000;
+  letter-spacing: 0px;
+  clear: both;
+  text-align: left;
+  */
 }
 
 .footer{
