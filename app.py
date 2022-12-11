@@ -1,4 +1,4 @@
-from flask import Flask, render_template,session
+from flask import Flask, request,render_template,session
 
 app = Flask(__name__)
 
@@ -14,4 +14,11 @@ def index():
     session['word_letter_4']="e"
     session['word_letter_5']="f"
     session['word_letter_6']="g"
+    return render_template('index.html')
+
+@app.route("/submit_guess",methods=['GET','POST'])
+def guess_submitted():
+    if request.method=='POST':
+        guess = request.form.get('guess').lower()
+        print(guess)
     return render_template('index.html')

@@ -6,6 +6,25 @@
     margin-bottom: 10px;
   }
 
+.magicspell-guess-form{
+  width: 300px;
+}
+  
+.magicspell-guess-input{
+  font-weight: 700;
+  font-size: 1.875em;
+  text-transform: uppercase;
+  padding:10px;
+  /*border:2 solid #9925be;*/
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;  
+}
+
+.magicspell-guess-button{
+  font-weight: 700;
+  font-size: 1.875em;  
+}
 
 .magicspell-controls-box {
     flex: 1;
