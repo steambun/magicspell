@@ -48,8 +48,12 @@
 
 .magicspell-grid-cell:first-child .cell-fill {
   cursor: pointer;
-  fill: #f7da21;
+  fill: #9925be;
   transition: all 100ms;
+}
+
+.magicspell-grid-cell:first-child .cell-letter{
+  fill: #ffffff;
 }
 
 .magicspell-grid-cell:nth-child(1) {
