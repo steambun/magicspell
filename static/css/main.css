@@ -13,7 +13,7 @@
 .magicspell-guess-input{
   font-weight: 700;
   font-size: 1.875em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding:10px;
   /*border:2 solid #9925be;*/
   border:0;
@@ -67,7 +67,7 @@
   font-weight: 700;
   font-size: 1.875em;
   text-anchor: middle;
-  text-transform: uppercase;
+  text-transform: lowercase;
   pointer-events: none;
 }
 
@@ -130,7 +130,7 @@
 
  
 .main {
-  font: 100% Cursive,"Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font: 100% "Helvetica Neue",Helvetica,Arial,Sans-serif;
   /*
   color: #000;
   letter-spacing: 0px;
