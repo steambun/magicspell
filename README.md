@@ -1,4 +1,5 @@
-# Magic Spell
+# Magic Spell [![unit-tests](https://github.com/steambun/magicspell/actions/workflows/main.yml/badge.svg)](https://github.com/steambun/magicspell/actions/workflows/main.yml)
+
 Spelling Program to improve Kids Spelling
 
 ## Developing Magic Spell
