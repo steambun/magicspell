@@ -1,4 +1,5 @@
-# Magic Spell
+# Magic Spell [![unit-tests](https://github.com/steambun/magicspell/actions/workflows/main.yml/badge.svg)](https://github.com/steambun/magicspell/actions/workflows/main.yml)
+
 Spelling Program to improve Kids Spelling
 
 ## Developing Magic Spell
@@ -42,4 +43,5 @@ We use pytest for testing our python code
     ```
 
 4. Familiarise yourself with framework with an [online tutorial](https://realpython.com/pytest-python-testing/)
+
 
