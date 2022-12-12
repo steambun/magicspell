@@ -14,6 +14,7 @@ def index():
     session['word_letter_4']="e"
     session['word_letter_5']="f"
     session['word_letter_6']="g"
+    session['display_error']="The word you entered is invalid"
     return render_template('index.html')
 
 @app.route("/submit_guess",methods=['GET','POST'])
