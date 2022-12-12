@@ -5,8 +5,8 @@ LENGTH_OF_WORD = 7
 def is_valid_word (guess):
     return len(guess) ==LENGTH_OF_WORD and guess.find("'") ==-1 and not guess[0].isupper()
 
-def generate_word_list():
-    word_file=open("wordlist.txt",encoding='UTF-8')
+def generate_word_list(filepath):
+    word_file=open(filepath,encoding='UTF-8')
 
     # create a word list
     word_list=[]
@@ -18,9 +18,8 @@ def generate_word_list():
             word_list.append(word)
     return word_list
 
-
 def generate_random_word():
-    word_list = generate_word_list()
+    word_list=generate_word_list("wordlist.txt")
     list_length = len(word_list)
     word = word_list[random.randint(0,list_length-1)]
     print(word)

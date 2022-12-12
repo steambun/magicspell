@@ -22,3 +22,24 @@ Spelling Program to improve Kids Spelling
     ```sh
     flask run
     ```
+### Testing
+
+We use pytest for testing our python code
+
+1. Install the framework
+    ```sh
+    pip install pytest
+    ```
+
+2. Update the requirements file to reflect the latest install
+    ```sh
+    python3 -m pip freeze > requirements.txt
+    ```
+
+3. Running test framework
+    ```sh
+    pytest
+    ```
+
+4. Familiarise yourself with framework with an [online tutorial](https://realpython.com/pytest-python-testing/)
+
