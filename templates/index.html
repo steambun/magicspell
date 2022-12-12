@@ -22,6 +22,7 @@
                     <form class="magicspell-guess-form" action="/submit_guess" method="post">
                     <center><input class="magicspell-guess-input" type="text" id="guess" name="guess" autofocus>
                         </center><button class="magicspell-guess-button" type="submit">🪄</button>
+                        <h5>{{ session['display_error'] }}</h5>
                         
                     </form>
                     <div class="magicspell-outer-grid">
