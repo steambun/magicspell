@@ -15,11 +15,14 @@ def index():
     session['word_letter_5']="f"
     session['word_letter_6']="g"
     session['display_error']="The word you entered is invalid"
+    session['last_guess']="guess"
+    session['guess_list']=[]
     return render_template('index.html')
 
 @app.route("/submit_guess",methods=['GET','POST'])
 def guess_submitted():
     if request.method=='POST':
         guess = request.form.get('guess').lower()
+        session['guess_list'].append(guess)
         print(guess)
     return render_template('index.html')
