@@ -24,5 +24,6 @@ def guess_submitted():
     if request.method=='POST':
         guess = request.form.get('guess').lower()
         session['guess_list'].append(guess)
+        session.modified = True
         print(guess)
     return render_template('index.html')
