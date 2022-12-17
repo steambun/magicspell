@@ -4,6 +4,8 @@ Spelling Program to improve Kids Spelling
 
 ## Developing Magic Spell
 
+### Environment
+
 1) Setting up virtual environment
     ```sh
     python3 -m venv venv
