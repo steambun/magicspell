@@ -1,6 +1,6 @@
 from flask import Flask, request,render_template,session
 
-from magicspell import generate_random_letter_order, generate_random_word
+from magicspell import generate_random_letter_order, generate_random_word,find_valid_subset_words
 
 app = Flask(__name__)
 
@@ -10,6 +10,14 @@ app.secret_key = "b'\x9a\\QE\xcb\x86@\xd2\x88\x8e\xa4w\x9b\x98\xa6\x86'"
 @app.route("/")
 def index():
     random_word=generate_random_word()
+    print("Random Word: "+random_word)
+
+    valid_words=find_valid_subset_words("wordlist.txt",random_word)
+    
+    print("Valid Words:")
+    for valid_word in valid_words:    
+        print("\t"+valid_word)
+
     letter_order=generate_random_letter_order()
     session['word_letter_middle']=random_word[letter_order[0]]
     session['word_letter_1']=random_word[letter_order[1]]
