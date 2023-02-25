@@ -26,17 +26,23 @@ def index():
     session['word_letter_4']=random_word[letter_order[4]]
     session['word_letter_5']=random_word[letter_order[5]]
     session['word_letter_6']=random_word[letter_order[6]]
-    session['display_error']="The word you entered is invalid"
+    # session['display_error']="The word you entered is invalid"
     session['last_guess']="guess"
     session['guess_list']=[]
     session['random_word']=random_word
+    session['valid_words']=valid_words
     return render_template('index.html')
 
 @app.route("/submit_guess",methods=['GET','POST'])
 def guess_submitted():
     if request.method=='POST':
         guess = request.form.get('guess').lower()
-        session['guess_list'].append(guess)
-        session.modified = True
-        print(guess)
+        print(guess)    
+        if guess in session['valid_words']:
+            session['guess_list'].append(guess)
+            session.modified = True
+            session['display_error']=""
+        else:
+            session['display_error']="The word you entered is not valid"
+
     return render_template('index.html')
